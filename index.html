@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scores">
+        <h2 class="best">Best: <span id="best" class="best"></span></h2>
+        <h2 class="best">Worse: <span id="worse" class="best"></span></h2>
+        <h1>Card Game</h1>
+        <h2>Score: <span id="score">0</span></h2>
+    </div>
+    <div class="game" id="game">
+        <div id="card1">
+            <div class="inside">
+                <div class="cube" onclick="rotate()"></div>
+            </div>
+        </div>
+        <div id="card2">
+            <div class="inside">
+                <div class="cube" onclick="rotate2()"></div>
+            </div>
+        </div>
+        <div id="card3">
+            <div class="inside">
+                <div class="cube" onclick="rotate3()"></div>
+            </div>
+        </div>
+    </div>
+    <button class="btn" onclick="restart()">Restart</button>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

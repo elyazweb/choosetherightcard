@@ -1,0 +1,167 @@
+body{
+    background-color: black;
+    font-family: fantasy;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#score{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.best{
+    font-size: 1em;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.btn{
+    width: 30%;
+    height: 100px;
+    font-family: fantasy;
+    font-size: 1.5em;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: azure 2px 2px 5px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.5s all;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.game{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 822px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+#card1, #card2, #card3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(822px/6);
+    height: calc(1122px/6);
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: rgba(174, 174, 174, 0.307) solid 3px;
+}
+
+.inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(800px/6);
+    height: calc(1100px/6);
+    background-color: rgb(185, 28, 28);
+    margin: auto;
+    border-radius: 10px;
+    border: rgb(220, 220, 220) solid 2px;    
+}
+
+.cube{
+    width: calc(800px/6);
+    height: calc(1100px/6);
+    border: rgb(220, 220, 220) solid 2px;
+    background: url(Screenshot\ 2024-06-14\ 135357.png);
+    background-size: 10px 10px;
+    border-radius: 10px;
+}
+
+#img{
+    width: calc(800px/6);
+    height: calc(1100px/6);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .game {
+        max-width: 600px; /* Adjust maximum width for smaller screens */
+    }
+    
+    .card {
+        flex: 1 0 calc(100% - 20px); /* Adjust for 2 cards per row */
+        max-width: calc(50% - 20px); /* Adjust maximum width of each card */
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .scores {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+
+    .game {
+        max-width: 80%;
+        margin-left: 0%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        right: 50%;
+        left: 50%;
+        flex: wrap; /* Adjust maximum width for even smaller screens */
+    }
+    
+    .card {
+        max-width: calc(100% - 150px); /* Maximum width of each card */
+        flex: 1;
+    }
+
+    .btn {
+        width: 50%;
+        height: 100px;
+        font-family: fantasy;
+        font-size: 1.5em;
+        margin-top: 50px;
+        border-radius: 10px;
+        box-shadow: azure 2px 2px 5px;
+        border: none;
+        cursor: pointer;
+        margin-left: 0;
+        margin-right: 25%;
+        background-color: white;
+        transition: 0.5s all;
+    }
+
+    h1, h2{
+        margin-top: 20px;
+    }
+    
+    .best, #score, h2, h1{
+        text-align: left;
+        margin-left: 30px;
+    }
+}
